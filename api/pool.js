@@ -5,10 +5,10 @@ const mysql = require('mysql');
  *  */
 const pool = mysql.createPool({
     connectionLimit: 10,
-    host: 'leehome.theleehome.org',
-    user: 'hurite45',
-    password: 'fjgyr56ws',
-    database: 'leehome'
+    host: 'somehhost',
+    user: 'user,
+    password: 'password',
+    database: 'db'
 });
 
 pool.getConnection((err, connection) => {
